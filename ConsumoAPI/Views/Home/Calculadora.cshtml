@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewData["Title"] = "Calculadora";
+}
+
+
+<div class="container">
+    <h1 class="text-center">Calculadora</h1>
+
+    <form>
+        <div class="form-group row">
+            <label for="inicio" class="col-sm-2 col-form-label">Inicio</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="inicio" name="inicio" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="fin" class="col-sm-2 col-form-label">Fin</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="fin" name="fin" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Tipo</label>
+            <div class="col-sm-10">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="par" name="tipo" value="par" required>
+                    <label class="form-check-label" for="par">Par</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="impar" name="tipo" value="impar" required>
+                    <label class="form-check-label" for="impar">Impar</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="aceptar">Aceptar</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="form-group row">
+            <label for="numero1" class="col-sm-4 col-form-label">Seleccionar Número 1</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="numero1"></select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="numero2" class="col-sm-4 col-form-label">Seleccionar Número 2</label>
+            <div class="col-sm-8">
+                <select class="form-control" id="numero2"></select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Operaciones</label>
+            <div class="col-sm-8">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="suma" name="operaciones" value="suma">
+                    <label class="form-check-label" for="suma">Suma</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="resta" name="operaciones" value="resta">
+                    <label class="form-check-label" for="resta">Resta</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="multiplicacion" name="operaciones" value="multiplicacion">
+                    <label class="form-check-label" for="multiplicacion">Multiplicación</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-success" id="realizar-operaciones">Realizar Operaciones</button>
+        </div>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+</div>
+
+<script src="~/js/calculadora.js"></script>
