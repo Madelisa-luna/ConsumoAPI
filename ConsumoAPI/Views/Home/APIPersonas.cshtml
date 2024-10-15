@@ -3,32 +3,33 @@
     ViewData["Title"] = "APIPersonas";
 }
 
-<h1 class="text-center my-4">APIPersonas</h1>
+<h1>API de Personas</h1>
 
-<div class="container">
-    <div class="table-responsive">
-        <table id="tablaDatos" class="table table-striped table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Nacionalidad</th>
-                    <th>Casado</th>
-                    <th>Dirección</th>
-                    <th>Sueldo</th>
-                    <th>Platos</th>
-                    <th>Imagen</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Las filas se agregarán aquí -->
-            </tbody>
-        </table>
-    </div>
+<br />
+
+<div class="container text-center">
+
+    <table id="tablaDatos" class="table table-bordered border-danger" style="width:100%">
+        <thead>
+            <tr class="table-danger">
+                <th id="col-rosa">Nombre</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+                <th>Casado</th>
+                <th>Dirección</th>
+                <th>Sueldo</th>
+                <th>Platos</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí -->
+        </tbody>
+    </table>
 </div>
+<br />
+<br />
 
-<br />
-<br />
 
 <!-- Custom script -->
 <script src="~/js/consumeapi.js"></script>

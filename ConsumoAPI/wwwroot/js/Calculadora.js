@@ -79,15 +79,18 @@ document.getElementById("aceptar").addEventListener("click", function () {
     const inicioInt = parseInt(inicio);
     const finInt = parseInt(fin);
 
+
     if (inicioInt >= finInt) {
         alert("El valor de inicio debe ser menor que el valor de fin.");
         return;
     }
 
+
     const tipoValor = tipo.value;
     const listaNumeros = generarNumeros(inicioInt, finInt, tipoValor);
     llenarSelects(listaNumeros);
 });
+
 
 // Event listener para el botón "Realizar Operaciones"
 document.getElementById("realizar-operaciones").addEventListener("click", realizarOperaciones);
