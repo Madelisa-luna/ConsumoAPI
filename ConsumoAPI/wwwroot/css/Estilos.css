@@ -1,0 +1,36 @@
+﻿.tarjeta {
+    background-color: #E6E6FA; /* Color morado pastel */
+    border: none; /* Sin borde */
+}
+
+.col-rosa {
+    background-color: #ffcccb; /* Rosa claro */
+}
+
+.realizar-operaciones {
+    background-color: #ffcccb; /* Rosa pastel */
+    color: #000; /* Color del texto */
+}
+
+.btn-rosa:hover {
+    background-color: #ff9999; /* Un tono más oscuro al pasar el mouse */
+}
+
+.form-control {
+    border: 2px solid #ffcccb; /* Borde rosa pastel */
+}
+
+    .form-control:focus {
+        border-color: #ff9999; /* Color del borde al hacer foco */
+        box-shadow: 0 0 5px rgba(255, 204, 203, 0.5); /* Sombra sutil */
+    }
+
+.card {
+    border: 2px solid #ffcccb; /* Borde rosa pastel */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.par:checked {
+    accent-color: #ff8cc0; /* Color rosa pastel */
+}
